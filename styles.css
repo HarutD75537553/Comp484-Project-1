@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #202130;
+    color: #f4f4f7;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: #69a7ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* Shared page layout */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #3b3c52;
+    border-bottom: 1px solid #55576f;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.brand img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    padding-bottom: 4px;
+}
+
+nav a.current-page {
+    color: #ffffff;
+    border-bottom: 2px solid #69a7ff;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 0 64px;
+}
+
+footer {
+    padding: 20px 5%;
+    color: #b9bad0;
+    text-align: center;
+    border-top: 1px solid #3f4055;
+}
+
+/* Homepage introduction */
+.intro {
+    margin-bottom: 48px;
+    padding: 48px;
+    background-color: #292a3d;
+    border-left: 4px solid #69a7ff;
+}
+
+.main-logo {
+    display: block;
+    width: 280px;
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    margin-bottom: 8px;
+    color: #69a7ff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+    color: #ffffff;
+}
+
+.intro h1 {
+    margin: 0;
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.intro > a {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 10px 18px;
+    color: #ffffff;
+    background-color: #367fdc;
+    border-radius: 4px;
+}
+
+.intro > a:hover {
+    background-color: #4d94ec;
+}
+
+/* Homepage content */
+.build-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.build-card {
+    padding: 24px;
+    background-color: #3b3c52;
+    border: 1px solid #55576f;
+    border-radius: 6px;
+}
+
+.build-card h3 {
+    margin: 8px 0;
+    font-size: 22px;
+}
+
+.build-card p {
+    color: #b9bad0;
+}
+
+.preview-image {
+    display: block;
+    width: calc(100% + 48px);
+    height: 260px;
+    margin: -24px -24px 20px;
+    object-fit: contain;
+    background-color: #171824;
+    border-bottom: 1px solid #55576f;
+}
+
+.view-link {
+    display: inline-block;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* Headings used on the pages */
+.page-heading {
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #55576f;
+}
+
+.page-heading h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+/* Full build gallery */
+.build-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.build-card-large figure {
+    margin: 0 -24px 20px;
+}
+
+.build-card-large img {
+    display: block;
+    width: 100%;
+    height: 440px;
+    object-fit: contain;
+    background-color: #171824;
+}
+
+.build-card-large img.landscape-photo {
+    height: 440px;
+    padding: 12px;
+    border: 1px solid #55576f;
+    object-fit: contain;
+}
+
+.build-card-large figcaption {
+    padding: 12px 24px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #303147;
+}
+
+.build-number {
+    margin-top: 0;
+    color: #69a7ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+details {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #55576f;
+}
+
+summary {
+    color: #69a7ff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details li {
+    margin-bottom: 6px;
+    color: #d2d3df;
+}
+
+/* Build process page */
+.process-section,
+.lessons-section {
+    margin-bottom: 32px;
+}
+
+.process-list {
+    padding-left: 28px;
+}
+
+.process-list li {
+    margin-bottom: 20px;
+    padding: 20px 24px;
+    background-color: #292a3d;
+    border-left: 4px solid #69a7ff;
+}
+
+.process-list li::marker {
+    color: #69a7ff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.process-list h3 {
+    margin-top: 0;
+}
+
+.lessons-section {
+    padding: 24px;
+    background-color: #3b3c52;
+    border: 1px solid #55576f;
+}
+
+/* About page */
+.about-section {
+    margin-bottom: 24px;
+    padding: 24px;
+    background-color: #292a3d;
+    border: 1px solid #45465d;
+}
+
+.about-section h2 {
+    margin-top: 0;
+    color: #69a7ff;
+}
+
+.favorites-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 0;
+    list-style: none;
+}
+
+.favorites-list li {
+    padding: 12px 16px;
+    background-color: #3b3c52;
+    border-left: 3px solid #69a7ff;
+}
